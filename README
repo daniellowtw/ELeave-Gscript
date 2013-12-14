@@ -13,11 +13,11 @@ Supports half day leave requests, and an approval interim.
 
 Look through the code, replace the following (use find tool)
 
-XXXX - email address to send requests to
-YYYY - Calendar with confirmed leave
-ZZZZ - Calendar with leave requests
-WWWW - Spreadsheet ID (go to the spreadsheet, choose share, in the url, there should be ...key=WWWW&...
-VVVV - The column number to track status (Assing an unused column to track status A=1, B=2, etc)
+XXXX - email address to send requests to  
+YYYY - Calendar with confirmed leave  
+ZZZZ - Calendar with leave requests  
+WWWW - Spreadsheet ID (go to the spreadsheet, choose share, in the url, there should be ...key=WWWW&...  
+VVVV - The column number to track status (Assing an unused column to track status A=1, B=2, etc)  
 
 * Follow the instructions from the website to create the form (and the spreadsheet). Do not copy the script as we will be replacing it with this version.
 * Create two additional fields called 'Start Date Type' and 'End Date Type'. The options for those are "Full Day", "Half Day AM" and "Half Day PM". Please note that all entries are case Sensitive.
@@ -34,3 +34,4 @@ Publicise the link for the form. Check email to approve or reject. There is the 
 
 * Get user name and email address automatically, after restricting the access to this form internally. Can be done by something like `var email = Session.getEffectiveUser().getEmail();`
 * Some form of tracking number of leaves taken.
+* Nicer response after approval/declination.
